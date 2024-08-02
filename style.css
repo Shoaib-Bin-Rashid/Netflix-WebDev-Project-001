@@ -224,13 +224,13 @@ p.line3 {
 
 .infop3 {
   padding: 3px;
+  text-align: left;
 }
 
 .namep3 {
   font-size: 1rem;
 }
 .down {
-  text-align: start;
   font-size: 0.9rem;
   color: #2d71ea;
   font-weight: 380;
@@ -241,6 +241,7 @@ p.line3 {
   height: 48px;
   width: 48px;
   background-size: 100%;
+  background-repeat: no-repeat;
   margin: 10px;
 }
 
@@ -439,10 +440,7 @@ select {
 }
 
 @media screen and (max-width: 600px) {
-  .main {
-    height: 520px;
-  }
-  .page_1 {
+  .main, .page_1 {
     height: 520px;
   }
 
@@ -500,5 +498,45 @@ select {
 
   #head {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:375px){
+  .main, .page_1 {
+    height: 560;
+  }
+  p.line1 {
+    font-size: 2rem;
+  }
+  p.line2 {
+    font-size: 1rem;
+  }
+  p.line3 {
+    font-size: 1rem;
+  }
+  .namep3 {
+    font-size: 0.75rem;
+  }
+  .down{
+    font-size: .65rem;
+  }
+  .framep3 img {
+    padding-left: 10px;
+  }
+  .box {
+    width: 200px;
+  }
+  .boxp3 {
+    bottom: 65px;
+    height: 55px;
+  }
+  .textimg img {
+    height: 50px;
+    padding: 3px 4.5px 5px 7.5px;
+  }
+  .anim {
+    height: 36px;
+    width: 36px;
+    min-height: 16px;
   }
 }
